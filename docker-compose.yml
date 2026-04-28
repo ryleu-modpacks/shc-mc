@@ -10,7 +10,7 @@ services:
       EULA: "TRUE"
       TYPE: "FABRIC"
       VERSION: "26.1.2"
-      PACKWIZ_URL: "https://modpacks.ryleu.me/shc-mc/pack.toml"
+      PACKWIZ_URL: "https://modpacks.ryleu.me/shc-mc/modpack/pack.toml"
       MEMORY: "" # controlled via JVM_OPTS
       JVM_OPTS: "-Xms20G -Xmx20G"
       JVM_XX_OPTS: >- # better garbage collection
