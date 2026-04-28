@@ -2,7 +2,7 @@ hash-format = "sha256"
 
 [[files]]
 file = "global_packs/required_data/server-setup/data/minecraft/tags/function/load.json"
-hash = "90be380b027a8932d93d3c37e30e2e9c47d8236be8ec5b9bbeedde08df33cdfa"
+hash = "752b545e281557ccf9f4174d1ed820b25775399061f619786d29f2b307109a79"
 
 [[files]]
 file = "global_packs/required_data/server-setup/data/setup/function/load.mcfunction"
@@ -59,6 +59,11 @@ metafile = true
 [[files]]
 file = "mods/luckperms.pw.toml"
 hash = "f94619f9e5aa689f1dcde4c59841ae50e6b8056abbaf57622c879444b0133faa"
+metafile = true
+
+[[files]]
+file = "mods/no-chat-reports.pw.toml"
+hash = "3db1b61528d0fdd908f1fe57685bbc49cdbe496bfe0e349a0280334444193c73"
 metafile = true
 
 [[files]]

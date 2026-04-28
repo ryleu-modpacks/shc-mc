@@ -7,7 +7,6 @@ services:
       - ./modpack:/data
     expose:
       - "8080"
-
   mc:
     depends_on:
       - packwiz

@@ -1,7 +1,7 @@
 {
-    "recommendations": [
-        "spgoding.datapack-language-server",
-        "ms-azuretools.vscode-containers",
-        "tamasfe.even-better-toml"
-    ]
+  "recommendations": [
+    "spgoding.datapack-language-server",
+    "ms-azuretools.vscode-containers",
+    "tamasfe.even-better-toml"
+  ]
 }

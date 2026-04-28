@@ -32,6 +32,7 @@ services:
       # RCON_PASSWORD is set via env_file
       MAX_CHAINED_NEIGHBOR_UPDATES: "1000000"
       VANILLATWEAKS_SHARECODE: "fgTRiM" # https://vanillatweaks.net/share#fgTRiM
+      ENFORCE_SECURE_PROFILE: false
       # TODO: update to match truenas setup
       UID: "1000"
       GID: "1000"
