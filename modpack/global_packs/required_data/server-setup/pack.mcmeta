@@ -1,0 +1,7 @@
+{
+  "pack": {
+    "description": "SHC server setup - LuckPerms groups and permissions",
+    "pack_format": 61,
+    "supported_formats": [61, 99]
+  }
+}

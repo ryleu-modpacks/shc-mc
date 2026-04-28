@@ -1,0 +1,51 @@
+services:
+  mc:
+    image: itzg/minecraft-server:java25
+    container_name: mc-server
+    ports:
+      - "25565:25565" # minecraft
+      - "24454:24454/udp" # simple voice chat
+    env_file: .env
+    environment:
+      EULA: "TRUE"
+      TYPE: "FABRIC"
+      VERSION: "26.1.2"
+      PACKWIZ_URL: "https://modpacks.ryleu.me/shc-mc/pack.toml"
+      MEMORY: "" # controlled via JVM_OPTS
+      JVM_OPTS: "-Xms20G -Xmx20G"
+      JVM_XX_OPTS: >- # better garbage collection
+        -XX:+UseZGC -XX:+ZGenerational -XX:+AlwaysPreTouch -XX:+UseStringDeduplication
+      VIEW_DISTANCE: "10"
+      SIMULATION_DISTANCE: "6"
+      MAX_PLAYERS: "50"
+      MOTD: "SHC Minecraft Server"
+      ENABLE_COMMAND_BLOCK: "false"
+      SPAWN_PROTECTION: "0"
+      ALLOW_FLIGHT: "true"
+      ONLINE_MODE: "true"
+      DIFFICULTY: "hard"
+      PVP: "true"
+      EXISTING_OPS_FILE: "SYNCHRONIZE"
+      OPS: "d9b9c3f4-1eee-4e8e-8ccf-c1421653c9f7"
+      OPS_PERMISSION_LEVEL: "4"
+      ENABLE_RCON: "true"
+      # RCON_PASSWORD is set via env_file
+      MAX_CHAINED_NEIGHBOR_UPDATES: "1000000"
+      VANILLATWEAKS_SHARECODE: "fgTRiM" # https://vanillatweaks.net/share#fgTRiM
+      # TODO: update to match truenas setup
+      UID: "1000"
+      GID: "1000"
+    volumes:
+      # TODO: update to match truenas setup
+      - /mnt/REPLACE_WITH_POOL/minecraft/data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: "24.00"
+          memory: 26G
+          # uncomment to pin to one NUMA node on monument
+          # reservations:
+          #   cpuset: "0-23"
+    restart: unless-stopped
+    tty: true
+    stdin_open: true

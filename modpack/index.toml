@@ -1,0 +1,87 @@
+hash-format = "sha256"
+
+[[files]]
+file = "global_packs/required_data/server-setup/data/minecraft/tags/function/load.json"
+hash = "90be380b027a8932d93d3c37e30e2e9c47d8236be8ec5b9bbeedde08df33cdfa"
+
+[[files]]
+file = "global_packs/required_data/server-setup/data/setup/function/load.mcfunction"
+hash = "542b68cc889f946db101827c28d72ca7476b7991a96991108e0abd2f18c5f586"
+
+[[files]]
+file = "global_packs/required_data/server-setup/data/setup/function/luckperms.mcfunction"
+hash = "00065a86130bed323919ad4b52b37f97ece4def31d7b2be5478ce38fd7c20024"
+
+[[files]]
+file = "global_packs/required_data/server-setup/pack.mcmeta"
+hash = "f42a69caf070a6241fb51ac6fbd16fd2a344f39bd93333d0e928dc8d81fc1ce5"
+
+[[files]]
+file = "mods/anti-xray.pw.toml"
+hash = "1d07aae485a2a92527e66367b656e743ec6e84471296f2f93bee163de3eb5460"
+metafile = true
+
+[[files]]
+file = "mods/c2me-fabric.pw.toml"
+hash = "6b306404c910f6910bb704132f724f62bb78594e281755b8d3125fe14bce349b"
+metafile = true
+
+[[files]]
+file = "mods/chunky.pw.toml"
+hash = "02828b2aa206fef8d3ab65097624e14712878bed28eff738e4c9a6f311ac5d91"
+metafile = true
+
+[[files]]
+file = "mods/distanthorizons.pw.toml"
+hash = "6f68058bdb8e42b85aad770ff6b2604a60057f982ee001d3f286ec7e5d5de505"
+metafile = true
+
+[[files]]
+file = "mods/fabric-api.pw.toml"
+hash = "f88b106c6c7500d912c11c973d9c124d52b1577c52630c282720367312452d24"
+metafile = true
+
+[[files]]
+file = "mods/ferrite-core.pw.toml"
+hash = "069d81cab53c0141459ad4d70bcf3e10f17652f24cc62d3b4a0fc2cd2b700871"
+metafile = true
+
+[[files]]
+file = "mods/globalpacks.pw.toml"
+hash = "4054621ba956c149298aeddeb452272f9b9cab2fff6a525ca76e73a5321e10fc"
+metafile = true
+
+[[files]]
+file = "mods/lithium.pw.toml"
+hash = "ceed226223967ea3e7017aad327a069250c289c834766e1a3cd27c8d0ad52de1"
+metafile = true
+
+[[files]]
+file = "mods/luckperms.pw.toml"
+hash = "f94619f9e5aa689f1dcde4c59841ae50e6b8056abbaf57622c879444b0133faa"
+metafile = true
+
+[[files]]
+file = "mods/scalablelux.pw.toml"
+hash = "645be5d20d755e83c986014b768abbf473d3bf31da5dcd197af63c8b200cc141"
+metafile = true
+
+[[files]]
+file = "mods/servercore.pw.toml"
+hash = "207595c62114a11bc98dcb67c9b029fe3053a8e367cee9aadde8ed4d01a9c830"
+metafile = true
+
+[[files]]
+file = "mods/simple-voice-chat.pw.toml"
+hash = "04185c12844c8da7eb28121a0a6f43ad077751de120eca5fa2a2ab93b8e7a2d3"
+metafile = true
+
+[[files]]
+file = "mods/spark.pw.toml"
+hash = "fbe51395401ce68d9933a65fbcb4ed8cda82ac88d4afd79a5740116114d15949"
+metafile = true
+
+[[files]]
+file = "mods/vmp-fabric.pw.toml"
+hash = "96c75aa9280fb3704a4c729b1b1a03d0660af2848455db627e3bdf84170f3f25"
+metafile = true

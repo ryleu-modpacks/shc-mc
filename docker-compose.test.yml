@@ -1,0 +1,30 @@
+# local testing overrides
+services:
+  packwiz:
+    image: getchoo/packwiz-serve:latest
+    container_name: packwiz-serve
+    volumes:
+      - ./modpack:/data
+    expose:
+      - "8080"
+
+  mc:
+    depends_on:
+      - packwiz
+    environment:
+      JVM_OPTS: "-Xms8G -Xmx8G"
+      MAX_PLAYERS: "5"
+      MOTD: "SHC Minecraft Server (TEST)"
+      PACKWIZ_URL: "http://packwiz:8080/pack.toml"
+      WHITELIST: "d9b9c3f4-1eee-4e8e-8ccf-c1421653c9f7"
+      # unset truenas ownership
+      UID: ""
+      GID: ""
+    # change volumes to a local one
+    volumes:
+      - ./data:/data
+    deploy:
+      resources:
+        limits:
+          cpus: "6.00"
+          memory: 10G

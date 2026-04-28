@@ -1,0 +1,9 @@
+# Local test server data
+/data/
+
+# Secrets
+.env
+
+# Nix
+result
+.direnv/
